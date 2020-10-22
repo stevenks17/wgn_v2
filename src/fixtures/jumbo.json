@@ -2,26 +2,26 @@
 [
     {
       "id": 1,
-      "title": "Enjoy on your TV.",
+      "title": "Whats next on your playlist?",
       "subTitle": "Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.",
-      "image": "/images/misc/home-tv.jpg",
-      "alt": "Tiger King on Netflix",
+      "image": "WGN PlaceHolder",
+      "alt": "Finally finish your steam backlog",
       "direction": "row"
     },
     {
       "id": 2,
-      "title": "Download your programmes to watch on the go.",
+      "title": "Find the latest information about your favorite games!",
       "subTitle": "Save your data and watch all your favourites offline.",
-      "image": "/images/misc/home-mobile.jpg",
-      "alt": "Watch on mobile",
+      "image": "WGN PlaceHolder",
+      "alt": "Watch your favorite streamer play the latest titles",
       "direction": "row-reverse"
     },
     {
       "id": 3,
-      "title": "Watch everywhere.",
+      "title": "Connect with fellow gamers!",
       "subTitle": "Stream unlimited films and TV programmes on your phone, tablet, laptop and TV without paying more.",
-      "image": "/images/misc/home-imac.jpg",
-      "alt": "Money Heist on Netflix",
+      "image": "WGN PlaceHolder",
+      "alt": "",
       "direction": "row"
     }
   ]
