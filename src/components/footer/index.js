@@ -15,3 +15,7 @@ Footer.Row = function FooterRow({children, ...restProps}) {
 Footer.Column = function FooterColumn({children, ...restProps}) {
     return <Column {...restProps}>{children}</Column>
 }
+
+Footer.Link = function FooterLink({children, ...restProps}) {
+    return <Link {...restProps}>{children}</Link>
+}
