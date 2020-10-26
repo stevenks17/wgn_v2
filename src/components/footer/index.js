@@ -10,3 +10,8 @@ export default function Footer({children, ...restProps}) {
 Footer.Row = function FooterRow({children, ...restProps}) {
     return <Row {...restProps}>{children}</Row>
 }
+
+
+Footer.Column = function FooterColumn({children, ...restProps}) {
+    return <Column {...restProps}>{children}</Column>
+}
