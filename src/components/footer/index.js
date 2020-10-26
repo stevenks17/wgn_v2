@@ -23,3 +23,7 @@ Footer.Link = function FooterLink({children, ...restProps}) {
 Footer.Title = function FooterTitle({children, ...restProps}) {
     return <Title {...restProps}>{children}</Title>
 }
+
+Footer.Text = function FooterText({children, ...restProps}) {
+    return <Text {...restProps}>{children}</Text>
+}
