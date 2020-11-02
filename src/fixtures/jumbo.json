@@ -3,24 +3,24 @@
     {
       "id": 1,
       "title": "Whats next on your playlist?",
-      "subTitle": "Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.",
-      "image": "WGN PlaceHolder",
+      "subTitle": "Get all your information for the newest titles in one place",
+      "image": "/images/misc/jumbotron2.jpg",
       "alt": "Finally finish your steam backlog",
       "direction": "row"
     },
     {
       "id": 2,
-      "title": "Find the latest information about your favorite games!",
-      "subTitle": "Save your data and watch all your favourites offline.",
-      "image": "WGN PlaceHolder",
-      "alt": "Watch your favorite streamer play the latest titles",
+      "title": "Watch streamers test drive your next purchase!",
+      "subTitle": "Watch new titles played by your favorite streamers",
+      "image": "/images/misc/jumbo2.jpg",
+      "alt": "Check out your favorite streamers",
       "direction": "row-reverse"
     },
     {
       "id": 3,
       "title": "Connect with fellow gamers!",
-      "subTitle": "Stream unlimited films and TV programmes on your phone, tablet, laptop and TV without paying more.",
-      "image": "WGN PlaceHolder",
+      "subTitle": "Team up to take down that final boss!",
+      "image": "/images/misc/jumbotron4.jpg",
       "alt": "",
       "direction": "row"
     }
