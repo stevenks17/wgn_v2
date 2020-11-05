@@ -19,11 +19,35 @@ export const Item = styled.div`
 `
 
 export const Header = styled.div`
-    display:flex;
+    display: flex;
     justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: 1px;
+    font-size: 26px;
+    font-weight: normal;
+    background: #303030;
+    padding: 0.8em 1.2em;
+    user-select: none;
+    align-items: center;
+    
+    img {
+        filter: brightness(0) invert(1);
+        width: 24px;
+
+        @media (max-width: 600px) {
+            width: 16px;
+        }
+    }
+    
+    @media (max-width: 600px) {
+        width: 16px;
+    }
+
 `
 
-export const Body = styled.div``
+export const Body = styled.div`
+
+`
 
 export const Frame = styled.div`
     margin-bottom: 40px;
