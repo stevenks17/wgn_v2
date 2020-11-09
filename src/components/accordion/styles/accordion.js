@@ -64,10 +64,6 @@ export const Body = styled.div`
 
 `
 
-export const Frame = styled.div`
-    margin-bottom: 40px;
-
-`
 
 export const Inner = styled.div``
 
