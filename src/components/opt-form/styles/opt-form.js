@@ -50,4 +50,8 @@ export const Button = styled.button`
 
 export const Text = styled.p``
 
-export const Break = styled.p``
+export const Break = styled.p`
+    flex-basis: 100%;
+    height: 0;
+    
+`
