@@ -18,6 +18,7 @@ export function FaqsContainer() {
           <OptForm>
               <OptForm.Input placeholder="Email Address" />
               <OptForm.Button> Try it now </OptForm.Button>
+              <OptForm.Break />
               <OptForm.Text> Get notifications for the most popular titles </OptForm.Text>
           </OptForm>
         </Accordion>
