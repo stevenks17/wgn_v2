@@ -18,7 +18,7 @@ export const Input = styled.input`
     max-width: 450px;
     width: 100%;
     border: 0;
-    padding: 0;
+    padding: 10px;
     height: 70px;
     box-sizing: border-box;
 
@@ -27,14 +27,26 @@ export const Input = styled.input`
 export const Button = styled.button`
     display: flex;
     align-items: center;
-    height: 100% ;
-    background: #00bfff;
+    height: 100%;
+    height: 70px ;
+    background: #a3c7e9;
     color: white;
     text-transform: uppercase;
     padding: 0 32px;
     font-size: 26px;
     border: 0;
     cursor: pointer;
+
+    &:hover { 
+        background: #8cb9e3
+    }
+
+    @media (max-width: 1000px) {
+        height: 50px;
+        font-size: 16px;
+        margin-top: 20px;
+        font-weight: bold;
+    }
 
     img {
         margin-left: 10px;
@@ -48,10 +60,19 @@ export const Button = styled.button`
 
 `
 
-export const Text = styled.p``
+export const Text = styled.p`
+    font-size: 19.2px;
+    color: white;
+    text-align: center
 
-export const Break = styled.p`
+    @media(max-width: 600px) {
+        font-size: 16px;
+        line-height: 22px;
+    }
+`
+
+export const Break = styled.div`
     flex-basis: 100%;
     height: 0;
-    
+
 `
