@@ -2,7 +2,10 @@ import styled from 'styled-components/macro'
 import { Link as ReactRouterLink } from 'react-router-dom'
 
 export const Background = styled.div`
-
+display: flex;
+flex-direction: column;
+background: url(${({ src }) => (src ? `../images/misc/${src}.jpg` : '../images/misc/home-bg.jpg')}) top left / cover
+  no-repeat;
 `
 
 export const Frame = styled.div``
@@ -27,7 +30,7 @@ export const Container = styled.div`
 export const Logo = styled.img`
     width: 108px;
     height: 52px;
-    margin-left: -40px;
+    margin-left: -20px;
 
     @media (min-width: 1449px) {
         height: 45px;
