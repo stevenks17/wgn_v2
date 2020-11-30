@@ -15,28 +15,25 @@ export function seedDatabase(firebase) {
   // Documentaries
   firebase.firestore().collection('series').add({
     id: getUUID(),
-    title: 'Tiger King',
-    description: 'An exploration of big cat breeding and its bizarre underworld, populated by eccentric characters.',
-    genre: 'documentaries',
-    maturity: '18',
-    slug: 'tiger-king',
+    title: 'Doom Eternal',
+    description: 'Set some time after the events of the 2016 game, the story follows the Doom Slayer once again, on a mission to end Hell's consumption of Earth and foil the alien Maykrs' plans to exterminate humanity.',
+    genre: 'FPS',
+    slug: 'DOOM',
   });
   firebase.firestore().collection('series').add({
     id: getUUID(),
-    title: 'Amanda Knox',
-    description: 'Amanda Marie Knox is an American woman who spent almost four years in an Italian prison.',
-    genre: 'documentaries',
-    maturity: '12',
-    slug: 'amanda-knox',
+    title: 'Final Fantasy VII Remake',
+    description: '2020 action role-playing game developed and published by Square Enix. It is the first in a planned series of games remaking the 1997 PlayStation game Final Fantasy VII. Set in the dystopian cyberpunk metropolis of Midgar, it puts players in the role of a mercenary named Cloud Strife.',
+    genre: 'RPG',
+    slug: 'FF7R',
   });
   firebase.firestore().collection('series').add({
     id: getUUID(),
-    title: 'Citizenfour',
+    title: 'Assassin's Creed Valhalla',
     description:
-      'Citizenfour is a 2014 documentary film directed by Laura Poitras, concerning Edward Snowden and the NSA spying scandal.',
-    genre: 'documentaries',
-    maturity: '12',
-    slug: 'citizenfour',
+      'Become Eivor, a legendary Viking raider on a quest for glory. Explore a dynamic and beautiful open world set against the brutal backdrop of England's Dark Ages. Raid your enemies, grow your settlement, and build your political power in the quest to earn a place among the gods in Valhalla.',
+    genre: 'RPG',
+    slug: 'ACV',
   });
   firebase.firestore().collection('series').add({
     id: getUUID(),
