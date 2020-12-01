@@ -1,11 +1,12 @@
 import Firebase from 'firebase/app'
 import 'firebase/firestore'
 import 'firebase/auth'
+import { seedDatabase } from '../seed'
 
 //seed database
 
 
-const firebaseConfig = {
+const config = {
     apiKey: "AIzaSyAsu4l-rK_lwoBwe2Ig_UfGb_D3gParJV4",
     authDomain: "wgn-v2.firebaseapp.com",
     databaseURL: "https://wgn-v2.firebaseio.com",
@@ -18,5 +19,6 @@ const firebaseConfig = {
 
 const firebase = Firebase.initializeApp(config)
 
+seedDatabase(firebase)
 
 export { firebase }
