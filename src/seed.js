@@ -16,7 +16,7 @@ export function seedDatabase(firebase) {
   firebase.firestore().collection('series').add({
     id: getUUID(),
     title: 'Doom Eternal',
-    description: 'Set some time after the events of the 2016 game, the story follows the Doom Slayer once again, on a mission to end Hell's consumption of Earth and foil the alien Maykrs' plans to exterminate humanity.',
+    description: 'Set some time after the events of the 2016 game, the story follows the Doom Slayer once again, on a mission to end Hells consumption of Earth and foil the alien Maykrs plans to exterminate humanity.',
     genre: 'FPS',
     slug: 'DOOM',
   });
@@ -29,9 +29,8 @@ export function seedDatabase(firebase) {
   });
   firebase.firestore().collection('series').add({
     id: getUUID(),
-    title: 'Assassin's Creed Valhalla',
-    description:
-      'Become Eivor, a legendary Viking raider on a quest for glory. Explore a dynamic and beautiful open world set against the brutal backdrop of England's Dark Ages. Raid your enemies, grow your settlement, and build your political power in the quest to earn a place among the gods in Valhalla.',
+    title: 'Assassins Creed Valhalla',
+    description: 'Become Eivor, a legendary Viking raider on a quest for glory. Explore a dynamic and beautiful open world set against the brutal backdrop of Englands Dark Ages. Raid your enemies, grow your settlement, and build your political power in the quest to earn a place among the gods in Valhalla.',
     genre: 'Action RPG',
     slug: 'ACV',
   });
