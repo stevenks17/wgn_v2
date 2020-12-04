@@ -14,7 +14,7 @@ export default function Signin() {
     event.preventDefault()
 
     //firebase stuff here
-    
+
   }
   // Check for valid form input
   // email and password
@@ -23,7 +23,7 @@ export default function Signin() {
   <>
     <HeaderContainer>
       <Form>
-        <Form.Title>Signin</Form.Title>
+        <Form.Title>Sign-In</Form.Title>
         {error && <Form.Error></Form.Error>}
 
         <Form.Base onSubmit={handleSignin} method="POST">
