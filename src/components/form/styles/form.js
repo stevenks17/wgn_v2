@@ -87,4 +87,8 @@ export const Submit = styled.button`
   &:disabled {
     opacity: 0.5;
   }
+  
+  &:hover{
+    background-color: #f40612;
+  }   
 `;
