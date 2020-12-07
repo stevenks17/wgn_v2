@@ -3,6 +3,7 @@ import { FirebaseContext } from '../context/firebase'
 import  HeaderContainer  from '../containers/header'
 import { FooterContainer } from '../containers/footer'
 import { Form } from '../components'
+import * as ROUTES from '../constants/routes'
 
 
 export default function Signin() {
@@ -26,7 +27,6 @@ export default function Signin() {
       setEmailAddress('')
       setPassword('')
       setError('error.message')
-
     })
   }
   // Check for valid form input
