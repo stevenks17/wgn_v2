@@ -5,8 +5,8 @@ import { Form } from '../components'
 
 
 export default function Signin() {
-  const [emailAddress, setEmailAddress] = useState()  
-  const [password, setPassword] = useState()  
+  const [emailAddress, setEmailAddress] = useState('')  
+  const [password, setPassword] = useState('')  
   const [error, setError] = useState('')  
 
   const isInvalid = password === '' || emailAddress === ''
@@ -24,7 +24,7 @@ export default function Signin() {
     <HeaderContainer>
       <Form>
         <Form.Title>Sign-In</Form.Title>
-        {error && <Form.Error></Form.Error>}
+        {error && <Form.Error>{error}</Form.Error>}
 
         <Form.Base onSubmit={handleSignin} method="POST">
           <Form.Input
