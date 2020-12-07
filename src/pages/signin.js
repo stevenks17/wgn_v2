@@ -16,7 +16,18 @@ export default function Signin() {
     event.preventDefault()
 
     //firebase stuff here
+    firebase
+    .auth()
+    .signInWithEmailAndPassword(emailAddress, password)
+    .then(() => {
+      // push user to browse page
+    })
+    .catch((error) => {
+      setEmailAddress('')
+      setPassword('')
+      setError('error.message')
 
+    })
   }
   // Check for valid form input
   // email and password
