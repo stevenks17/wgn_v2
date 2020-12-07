@@ -69,6 +69,7 @@ export const Input = styled.input`
   line-height: 50px;
   padding: 5px 20px;
   margin-bottom: 20px;
+  
   &:last-of-type {
     margin-bottom: 30px;
   }
@@ -84,6 +85,7 @@ export const Submit = styled.button`
   border: 0;
   color: white;
   cursor: pointer;
+  
   &:disabled {
     opacity: 0.5;
   }
