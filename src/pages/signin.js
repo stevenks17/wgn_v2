@@ -44,6 +44,10 @@ export default function Signin() {
         Sign In
       </Form.Submit>
         </Form.Base>
+
+        <Form.Text>
+          New to WGN? <Form.Link></Form.Link>
+        </Form.Text>
       </Form>
 
     </HeaderContainer>
