@@ -15,23 +15,11 @@ export default function Signup() {
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')  
 
-  const isInvalid = password === '' || emailAddress === ''
-  const handleSignin = (event) => {
+  const isInvalid = userName === ''|| password === '' || emailAddress === ''
+  const handleSignup = (event) => {
     event.preventDefault()
 
-    //firebase stuff here
-    firebase
-    .auth()
-    .signInWithEmailAndPassword(emailAddress, password)
-    .then(() => {
-      // push user to browse page
-      history.push(ROUTES.BROWSE)
-    })
-    .catch((error) => {
-      setEmailAddress('')
-      setPassword('')
-      setError(error.message)
-    })
+    //firebase
   }
 
   return  (<h1> Hello from the Signup</h1>)
