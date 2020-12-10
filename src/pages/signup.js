@@ -22,7 +22,9 @@ export default function Signup() {
     //firebase
   }
 
-  return  <HeaderContainer>
+  return (
+  <>
+  <HeaderContainer>
     <Form>
       <Form.Title>Sign Up</Form.Title>
       {error && <Form.Error>{error}</Form.Error>}
@@ -64,5 +66,8 @@ export default function Signup() {
       </Form.Base>
     </Form>
   </HeaderContainer>
-
+  <FooterContainer />
+  
+ </>
+  )
 }
