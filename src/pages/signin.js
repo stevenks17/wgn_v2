@@ -13,7 +13,6 @@ export default function Signin() {
   const [emailAddress, setEmailAddress] = useState('')  
   const [password, setPassword] = useState('')  
   const [error, setError] = useState('')  
-
   const isInvalid = password === '' || emailAddress === ''
   const handleSignin = (event) => {
     event.preventDefault()
@@ -29,7 +28,7 @@ export default function Signin() {
     .catch((error) => {
       setEmailAddress('')
       setPassword('')
-      setError('error.message')
+      setError(error.message)
     })
   }
   // Check for valid form input
@@ -40,7 +39,7 @@ export default function Signin() {
     <HeaderContainer>
       <Form>
         <Form.Title>Sign-In</Form.Title>
-        {error && <Form.Error>{error}</Form.Error>}
+        {error && <Form.Error data-testid="error">{error}</Form.Error>}
 
         <Form.Base onSubmit={handleSignin} method="POST">
           <Form.Input
