@@ -22,6 +22,11 @@ export default function Signup() {
     //firebase
   }
 
-  return  (<h1> Hello from the Signup</h1>)
+  return  <HeaderContainer>
+    <Form>
+      <Form.Title>Sign Up</Form.Title>
+      {error && <Form.Error>{error}</Form.Error>}
+    </Form>
+  </HeaderContainer>
 
 }
