@@ -1,4 +1,5 @@
 import React, {useState, useContext} from 'react'
+import { useHistory } from 'react-router-dom'
 import { FirebaseContext } from '../context/firebase'
 import  HeaderContainer  from '../containers/header'
 import { FooterContainer } from '../containers/footer'
@@ -7,6 +8,7 @@ import * as ROUTES from '../constants/routes'
 
 
 export default function Signin() {
+  const history = useHistory()
   const { firebase } = useContext(FirebaseContext)
   const [emailAddress, setEmailAddress] = useState('')  
   const [password, setPassword] = useState('')  
@@ -22,6 +24,7 @@ export default function Signin() {
     .signInWithEmailAndPassword(emailAddress, password)
     .then(() => {
       // push user to browse page
+      history.push(ROUTES.BROWSE)
     })
     .catch((error) => {
       setEmailAddress('')
