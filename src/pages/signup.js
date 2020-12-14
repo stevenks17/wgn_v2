@@ -16,10 +16,29 @@ export default function Signup() {
   const [error, setError] = useState('')  
 
   const isInvalid = userName === ''|| password === '' || emailAddress === ''
+  
   const handleSignup = (event) => {
     event.preventDefault()
 
     //firebase
+    firebase
+    .auth()
+    .createUserWithEmailAndPassword(emailAddress, password)
+    .then((result) => 
+      result.user
+      .updateProfile({
+        displayName: userName,
+        photoURL: Math.floor(Math.random() * 5 ) + 1,
+      }).then(() => {
+        history.push(ROUTES.BROWSE)
+      })
+    )
+    .catch((error) => {
+      setUserName(' ')
+      setEmailAddress(' ')
+      setPassword(' ')
+      setError(error.message)
+    })
   }
 
   return (
