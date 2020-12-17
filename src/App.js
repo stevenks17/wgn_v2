@@ -6,20 +6,35 @@ import { IsUserRedirect } from './helpers/routes'
 
 
 export default function App() {
+   const user ={};
+
   return (
     <Router>
-      <Route exact path='/signin'>
+      <Route  path='/signin'>
         <IsUserRedirect 
-        user={user} 
-        loggedInPath={ROUTES.BROWSE} 
-        path={ROUTES.SIGNIN}
+          user={user} 
+          loggedInPath={ROUTES.BROWSE} 
+          path={ROUTES.SIGN_IN}
+          exact
         >
-        <Signin />
+
+          <Signin />
         </IsUserRedirect>
       </Route>
-      <Route exact path='/signup'>
-        <Signup />
+
+
+      <Route  path='/signup'>
+        <IsUserRedirect 
+          user={user} 
+          loggedInPath={ROUTES.BROWSE} 
+          path={ROUTES.SIGN_UP}
+          exact
+        >
+            <Signup />
+        </IsUserRedirect>
       </Route>
+
+      
       <Route exact path='/browse'>
         <Browse />
       </Route>
