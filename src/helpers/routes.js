@@ -1,11 +1,30 @@
-import React from 'react'
-import { Route, Redirect } from 'react-router-dom'
 
-//react router notes for user redirect
+import React from 'react';
+import { Route, Redirect } from 'react-router-dom';
 
+/// userRedirect helper from react router notes
 
 export function IsUserRedirect({ user, loggedInPath, children, ...rest }) {
-    return (
+  return (
+    <Route
+      {...rest}
+      render={() => {
+        if (!user) {
+          return children;
+        }
 
-    )
+        if (user) {
+          return (
+            <Redirect
+              to={{
+                pathname: loggedInPath,
+              }}
+            />
+          );
+        }
+
+        return null;
+      }}
+    />
+  );
 }
