@@ -14,6 +14,7 @@ export function IsUserRedirect({ user, loggedInPath, children, ...rest }) {
         }
 
         if (user) {
+          
           return (
             <Redirect
               to={{
