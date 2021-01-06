@@ -51,14 +51,14 @@ export function seedDatabase(firebase) {
     slug: 'Gears',
   });
 
-  // adventure
-  firebase.firestore().collection('series').add({
+  // game
+  firebase.firestore().collection('game').add({
     id: getUUID(),
-    title: 'The Office',
+    title: 'Darkest Dungeon',
     description:
-      'A motley group of office workers go through hilarious misadventures at the Scranton, Pennsylvania, branch of the Dunder Mifflin Paper Company.',
-    genre: 'comedies',
-    slug: 'the-office',
+      "Challenging gothic roguelike turn-based RPG about the psychological stresses of adventuring. Recruit, train, and lead a team of flawed heroes against unimaginable horrors, stress, famine, disease, and the ever-encroaching dark",
+    genre: 'RPG',
+    slug: 'Darkest Dungeon',
   });
 
 }
