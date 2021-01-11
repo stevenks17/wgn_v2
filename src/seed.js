@@ -51,14 +51,70 @@ export function seedDatabase(firebase) {
     slug: 'Gears',
   });
 
-  // game
-  firebase.firestore().collection('game').add({
+  // games
+  firebase.firestore().collection('games').add({
     id: getUUID(),
     title: 'Darkest Dungeon',
     description:
       "Challenging gothic roguelike turn-based RPG about the psychological stresses of adventuring. Recruit, train, and lead a team of flawed heroes against unimaginable horrors, stress, famine, disease, and the ever-encroaching dark",
     genre: 'RPG',
     slug: 'Darkest Dungeon',
+  });
+    firebase.firestore().collection('games').add({
+    id: getUUID(),
+    title: 'Star Wars Jedi: Fallen Order',
+    description:
+      "A galaxy-spanning adventure awaits in Star Wars Jedi: Fallen Order, a 3rd person action-adventure title from Respawn. An abandoned Padawan must complete his training, develop new powerful Force abilities, and master the art of the lightsaber - all while staying one step ahead of the Empire.",
+    genre: 'Action-Adventure',
+    slug: 'SWFO',
+  });
+    firebase.firestore().collection('games').add({
+    id: getUUID(),
+    title: 'Ghost of Tsushima',
+    description:
+      "2020 action-adventure game developed by Sucker Punch Productions and published by Sony Interactive Entertainment. Featuring an open world, it follows Jin Sakai, a samurai on a quest to protect Tsushima Island during the first Mongol invasion of Japan.",
+    genre: 'RPG',
+    slug: 'GoT',
+  });
+    firebase.firestore().collection('games').add({
+    id: getUUID(),
+    title: 'Cyberpunk',
+    description:
+      "an open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour and body modification. You play as V, a mercenary outlaw going after a one-of-a-kind implant that is the key to immortality.",
+    genre: 'RPG',
+    slug: 'CP77',
+  });
+    firebase.firestore().collection('games').add({
+    id: getUUID(),
+    title: 'Marvels Avengers',
+    description:
+      "Assemble your team of Earth’s Mightiest Heroes, embrace your powers, and live your Super Hero dreams.",
+    genre: 'RPG',
+    slug: 'MA',
+  });
+    firebase.firestore().collection('games').add({
+    id: getUUID(),
+    title: 'Spider-Man',
+    description:
+      "This isn’t the Spider-Man you’ve met or ever seen before. This is an experienced Peter Parker who’s more masterful at fighting big crime in Marvel's New York. At the same time, he’s struggling to balance his chaotic personal life and career while the fate of millions of New Yorkers rest upon his shoulders",
+    genre: 'Action',
+    slug: 'SPMN',
+  });
+    firebase.firestore().collection('games').add({
+    id: getUUID(),
+    title: 'Overwatch',
+    description:
+      "Overwatch is a team-based multiplayer first-person shooter developed and published by Blizzard Entertainment. Described as a hero shooter, Overwatch assigns players into two teams of six, with each player selecting from a large roster of characters, known as heroes, with unique abilities.",
+    genre: 'FPS',
+    slug: 'OW',
+  });
+    firebase.firestore().collection('games').add({
+    id: getUUID(),
+    title: 'The Legend of Zelda: Breath of the Wild',
+    description:
+      "Step into a world of discovery, exploration and adventure in The Legend of Zelda: Breath of the Wild, a boundary-breaking new game in the acclaimed series. Travel across fields, through forests and to mountain peaks as you discover what has become of the ruined kingdom of Hyrule in this stunning open-air adventure.",
+    genre: 'Action Adventure',
+    slug: 'BOTW',
   });
 
 }
