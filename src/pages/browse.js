@@ -1,4 +1,5 @@
 import React from 'react'
+import { BrowseContainer } from '../containers/browse'
 import { useContent } from '../hooks'
 import selectionFilter from '../utils/selection-filter'
 
@@ -12,6 +13,6 @@ const slides = selectionFilter({ series, games})
 console.log(slides)
   // animate cards to play gameplay videos??? maybe use browse container to house animation
     
-  return  (<h1> Hello from the browse</h1>)
+  return  <BrowseContainer />
 
 }
