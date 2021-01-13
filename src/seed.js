@@ -10,8 +10,8 @@ export function seedDatabase(firebase) {
     /* eslint-enable */
   }
 
-  /* Series
-    ============================================ */
+  // Series
+  //==============================================================
   
   firebase.firestore().collection('series').add({
     id: getUUID(),
@@ -31,7 +31,7 @@ export function seedDatabase(firebase) {
     id: getUUID(),
     title: 'Assassins Creed Valhalla',
     description: 'Become Eivor, a legendary Viking raider on a quest for glory. Explore a dynamic and beautiful open world set against the brutal backdrop of Englands Dark Ages. Raid your enemies, grow your settlement, and build your political power in the quest to earn a place among the gods in Valhalla.',
-    genre: 'Action RPG',
+    genre: 'RPG',
     slug: 'ACV',
   });
   firebase.firestore().collection('series').add({
@@ -47,7 +47,7 @@ export function seedDatabase(firebase) {
     title: 'Gears Tactics',
     description:
       "fast-paced, turn-based strategy game set 12 years before the first Gears of War. ... Against all odds and fighting for survival, outsmart your enemy in uniquely brutal, turn-based tactical combat. Experience the intensity of one of the most-acclaimed video game sagas in an exciting new way.",
-    genre: 'strategy',
+    genre: 'Strategy',
     slug: 'Gears',
   });
 //===============================================================================================================================================================================
