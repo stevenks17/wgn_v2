@@ -11,6 +11,16 @@ export function SelectProfileContainer({ user, setProfile}) {
                     <Header.Logo to={ROUTES.HOME} alt="Which Game Next?" src={logo} />
                 </Header.Frame>
             </Header>
+
+            <Profile>
+                <Profile.Title> Logged in as </Profile.Title>
+                <Profiles.List>
+                    <Profiles.User>
+                        <Profiles.Picture src={user.photoURL} />
+                        <Profiles.Name>{user.displayName}</Profiles.Name>
+                    </Profiles.User>
+                </Profiles.List>
+            </Profiles.User>
         </>
     )
 }
