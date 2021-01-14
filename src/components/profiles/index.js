@@ -19,7 +19,7 @@ Profiles.User = function ProfilesUser({children, restProps}) {
 }
 
 Profiles.Picture = function ProfilesPicture({children, restProps}) {
-    return <Picture {...restProps} src={src ? `/images/users/${src}.png`}></Picture>
+    return <Picture {...restProps} src={src ? `/images/users/${src}.png`} : `/images/misc/loading`/>
 }
 
 Profiles.Name = function ProfilesName({children, restProps}) {
