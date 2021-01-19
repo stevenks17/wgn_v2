@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container } from '../jumbotron/styles/jumbotron'
-
+import { Container, Title, List, Item, Name } from './styles/profiles'
 
 export default function Profiles({children, ...restProps}) {
     return <Container {...restProps}>{children}</Container>
