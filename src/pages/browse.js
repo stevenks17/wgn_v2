@@ -9,10 +9,9 @@ export default function Browse() {
   const { series } = useContent('series')
   const { games } = useContent('games')
   // need to make slideable cards
-const slides = selectionFilter({ series, games})
-console.log(slides)
+  const slides = selectionFilter({ series, games})
   // animate cards to play gameplay videos??? maybe use browse container to house animation
     
-  return  <BrowseContainer />
+  return  <BrowseContainer slides={slides} />
 
 }
