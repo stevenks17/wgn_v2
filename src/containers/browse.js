@@ -25,12 +25,14 @@ export function BrowseContainer({ slides }) {
         <Loading.ReleaseBody />
       )}
 
-      <Header src="gamer1">
-          <p>Hello</p>
+        <Header src="gamer1">
+          <Header.Feature>
+            <Header.Text>lorem ipsum lorem ipsum lorem ipsum lorem ipsum</Header.Text>
+          </Header.Feature>
         </Header>
       </>
     ) : (
-    <SelectProfileContainer user={user} setProfile={setProfile} 
+      <SelectProfileContainer user={user} setProfile={setProfile} 
     /> 
     )
 }
