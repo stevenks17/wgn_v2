@@ -28,10 +28,26 @@ export function BrowseContainer({ slides }) {
         <Loading.ReleaseBody />
       )}
 
-        <Header src="gamer1">
+        <Header src="gamer1" dontShowOnSmallViewPort>
 
           <Header.Frame>
+            <Header.Group>
               <Header.Logo to={ROUTES.HOME} alt="Which Game Next?" src={logo} />
+              <Header.TextLink>Series</Header.TextLink>
+              <Header.TextLink>Games</Header.TextLink>
+            </Header.Group>
+
+            <Header.Group>
+              <Header.Profile>
+                <Header.Picture src={user} />
+                <Header.Dropdown>
+                  <Header.Group>
+                    <Header.Picture src={user} />
+                    <Header.TextLink>{user.DisplayName}</Header.TextLink>
+                  </Header.Group>
+                </Header.Dropdown>
+              </Header.Profile>
+            </Header.Group>
           </Header.Frame>
 
           <Header.Feature>
