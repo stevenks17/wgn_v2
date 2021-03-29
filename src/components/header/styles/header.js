@@ -3,12 +3,19 @@ import { Link as ReactRouterLink } from 'react-router-dom'
 
 export const Background = styled.div`
 display: flex;
-flex-direction: column;
+flex-direction: row;
 background: url(${({ src }) => (src ? `../images/misc/${src}.jpg` : '../images/misc/home-bg.jpg')}) top left / cover
   no-repeat;
+
+  @media(max-width: 1100px) {
+      ${({ dontShowOnSmallViewPort}) => dontShowOnSmallViewPort && 'background: none;'}
+  }
+
 `
 
-export const Frame = styled.div``
+export const Frame = styled.div`
+
+`
 
 export const Container = styled.div`
     display: flex;
@@ -76,6 +83,23 @@ export const Text = styled.p`
     margin: 0;
 `
 
+export const Link = styled.p`
+    color: white;
+    text-decoration: none;
+    margin-right: 30px;
+    margin-top: 0px;
+    font-weight: ${({active}) => (active === 'true' ? '700': 'normal') };
+    cursor: pointer;
+
+    &:hover {
+        font-weight: bold;
+    }
+
+    &: last-of-type {
+        margin-right; 0;
+    }
+`
+
 export const FeatureCallOut = styled.h2`
     color: white;
     font-size: 50px;
@@ -83,4 +107,19 @@ export const FeatureCallOut = styled.h2`
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
     margin: 0;
     margin-bottom: 20px;
+`
+export const Group = styled.div`
+    display: flex;
+    align-items: center;
+`
+
+export const Picture = styled.div`
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    position: relative;
+
+    button {
+        cursor: pointer;
+    }
 `
