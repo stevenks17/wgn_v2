@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link as ReactRouterLink} from 'react-router-dom'
-import { Background, ButtonLink, Container, Group, Link, Logo, Feature, Text, FeatureCallOut, Picture, } from './styles/header'
+import { Background, ButtonLink, Container, Group, Link, Logo, Feature, Text, FeatureCallOut, Picture, Profile, } from './styles/header'
 
 export default function Header({ bg = true, children, ...restProps }) {
     return bg ? (
@@ -50,4 +50,8 @@ Header.Logo = function HeaderLogo ({ to, ...restProps}) {
 
 Header.Picture = function HeaderPicture({src, ...restProps}) {
     return <Picture {...restProps} src={`/images/users/${src}.png`} />
+}
+
+Header.Profile = function HeaderProfile ({children , ...restProps}) {
+    return <Profile {...restProps}>{children}</Profile>
 }
