@@ -113,7 +113,7 @@ export const Group = styled.div`
     align-items: center;
 `
 
-export const Picture = styled.div`
+export const Profile = styled.div`
     display: flex;
     align-items: center;
     margin-left: 20px;
@@ -122,4 +122,13 @@ export const Picture = styled.div`
     button {
         cursor: pointer;
     }
+`
+
+export const Picture = styled.button`
+    background: url(${({src}) => src});
+    background-size: contain;
+    border: 0;
+    width: 32px;
+    height: 32px
+    cursor: pointer;
 `
