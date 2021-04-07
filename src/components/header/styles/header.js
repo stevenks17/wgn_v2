@@ -115,12 +115,25 @@ export const Group = styled.div`
 
 export const Dropdown = styled.div`
     display: none;
-    background-color: black;
     position: absolute;
+    background-color: black;
     padding: 10px;
     width: 100px;
     top: 32px;
     right: 10px;
+
+    ${Group} :last-of-type ${Link} {
+        cursor: pointer;
+    }
+
+    ${Group} {
+        margin-bottom: 10px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+        
+    }
 
     
 
@@ -131,6 +144,7 @@ export const Profile = styled.div`
   align-items: center;
   margin-left: 20px;
   position: relative;
+
   button {
     cursor: pointer;
   }
