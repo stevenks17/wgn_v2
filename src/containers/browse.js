@@ -7,6 +7,7 @@ import logo from '../logo2.png'
 
 
 export function BrowseContainer({ slides }) {
+    const [searchTerm, setSearchTerm] = useState('')
     const [profile, setProfile] = useState({})
     const [loading, setLoading] = useState(true)
     const { firebase } = useContext(FirebaseContext)
@@ -38,6 +39,7 @@ export function BrowseContainer({ slides }) {
             </Header.Group>
 
             <Header.Group>
+              <Header.Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
               <Header.Profile>
               <Header.Picture src={user.photoURL} />
               <Header.Dropdown>
