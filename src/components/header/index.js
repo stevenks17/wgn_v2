@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {Link as ReactRouterLink} from 'react-router-dom'
-import { Background, ButtonLink, Container, Group, Link, Logo, Feature, Text, FeatureCallOut, Picture, Profile, Dropdown, SearchInput, Search, SearchIcon, SearchInput, } from './styles/header'
+import { Background, ButtonLink, Container, Group, Link, Logo, Feature, Text, FeatureCallOut, Picture, Profile, Dropdown, SearchInput, Search, SearchIcon, } from './styles/header'
 
 export default function Header({ bg = true, children, ...restProps }) {
     return bg ? (
