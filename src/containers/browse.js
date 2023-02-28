@@ -34,7 +34,7 @@ export function BrowseContainer({ slides }) {
           <Header.Frame>
             <Header.Group>
               <Header.Logo to={ROUTES.HOME} alt="Which Game Next?" src={logo} />
-              <Header.TextLink>Seriess</Header.TextLink>
+              <Header.TextLink>Series</Header.TextLink>
               <Header.TextLink>Games</Header.TextLink>
             </Header.Group>
 
